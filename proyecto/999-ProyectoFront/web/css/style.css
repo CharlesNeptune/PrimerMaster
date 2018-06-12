@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: url(../img/background.jpg);*/
+    background: #4CAF50;
+    font-family: 'Bangers', cursive;/* tipo de fuente */
+    color: #2a2a2a; /* color del texto */
+}
+
+header{
+    background-image: url(../img/cabeceraprueba1.png);
+    padding: 20px;
+    text-align: center;
+}
+header img{
+    width: 50%;
+header h1{
+    color:#fff;
+    font-weight: lighter;
+    font-size: 1.2em; /*los em son unidades de medidas relativos para responsivo 1.em es el estandart del navegador 1.2 lo hace un poco más grande */
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+}
+}
+a img{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: block;
+    width: 30px;
+    
+}
+
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px #444;
+}
+
+span{color: #E40B80;}
+
+
+nav{
+    background: #E0E0E0;
+    overflow: hidden;
+    width: 100%;
+}
+nav ul{
+    width: 70%;
+    list-style: none;
+    margin: 0 auto;
+    background: #E0E0E0;
+    
+}
+nav ul li{
+    float: left;
+    width: 16.6666%;
+    text-align: center;
+    padding: 20px;
+}
+nav ul li a{
+    color: #2a2a2a;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #4CAF50;
+}
+
+
+.publi{
+    width: 100%;
+}
+.publi img{
+    width: 100%;
+    display: block;
+    
+}
+
+/*COLUMNAS*/
+.col{
+    float: left;
+    padding: 20px;
+}
+.col_1{width: 100%;}
+.col_2{width: 50%;}
+.col_3{width: 33.333%;}
+.col_4{width: 25%;}
+.col_5{width: 20%;}
+.col_70{width: 70%;}
+.col_30{width: 30%;}
+
+.blanco{
+    background-color: #fff;
+}
+
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+section h2{
+    margin-bottom: 20px;
+    color: #D0B76C;
+    font-size: 2.2em;
+    font-weight: lighter;
+    transition: 1s all;
+}
+section h3{
+    font-size: .9em;
+    margin-bottom: 20px;
+    color: #B2505D;
+}
+section p{
+    line-height: 2.5em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+article{
+    text-align: center;
+    padding-bottom:100px ;
+    
+
+}
+article a{
+    transition: 1s all;
+}
+article a:hover{
+    -webkit-transform: scale(1.2);
+    
+}
+
+/*LISTA PLAFORMA*/
+.plataformas{
+    list-style: none;
+    text-align: center;
+    border-left: 1px solid #aaa;
+}
+.plataformas li{
+    padding: 10px;
+}
+.header_li{
+     margin-left: 100px;    
+    font-size: 1.5em;
+    color: #820648;
+}
+.plataformas li a{
+    text-decoration: none;
+    color: #aa8e5f;
+}
+
+/*BOTONES*/
+.aceptar,.cancelar,.neutro{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+   
+}
+.aceptar{
+    background-color: #6FCD9B;
+    border-bottom: 4px solid #4d8e6b;
+}
+.cancelar{
+    background-color: #E40B80;
+    border-bottom: 4px solid #820648;
+}
+.neutro{
+    background-color: #aaa;
+    border-bottom: 4px solid #444444;
+}
+/*FORMULARIO*/
+input,textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+textarea{
+    height: 200px;
+}
+input[type="submit"],input[type="reset"]{
+    border: none;
+    color: white;
+    width: 30%;
+}
+input[type="reset"]{ 
+    background-color: #E40B80;
+    transition: 1s all;
+}
+input[type="submit"]{
+    background-color: #6FCD9B;
+    transition: 1s all;
+}
+input[type="submit"]:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+
+footer{
+    background: #2a2a2a;
+    padding: 20px;
+}
+footer h3{
+    color: #fff;
+}
+.active{
+    color: #820648!important;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:1000px){
+    .wrapper{
+        width: 95%;
+    }
+}
+@media screen and (max-width:600px){
+    .wrapper{width: 100%;}
+    .col_70,.col_30{width: 100%;}
+    .categorias{
+        border-left: 0;
+        border-top: 1px solid #aaa;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav ul li{
+        width: 100%;
+        border-top: 1px solid #aa8e5f;
+        padding: 10px;
+    }
+    section h2{
+        font-size: 2em;
+    }
+}
